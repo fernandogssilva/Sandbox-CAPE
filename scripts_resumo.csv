@@ -1,0 +1,7 @@
+Arquivo,Tipo,Descrição,Execução,Quando Usar,Duração
+cape_install_part1.sh,Bash Script,Instalação inicial do CAPE e KVM,sudo ./cape_install_part1.sh,Primeira etapa - instala CAPE e hipervisor,~15 minutos + reboot
+cape_install_part2.sh,Bash Script,Instalação de dependências Python e configuração,sudo ./cape_install_part2.sh,Após primeiro reboot da Parte 1,~20 minutos
+cape_config.sh,Bash Script,Configuração interativa dos arquivos do CAPE,sudo ./cape_config.sh,Após criar e configurar o guest Windows,~5 minutos
+windows_guest_setup.ps1,PowerShell Script,Configuração automática do Windows guest,powershell -ExecutionPolicy Bypass -File windows_guest_setup.ps1,Dentro da VM Windows após instalação,~2 minutos
+cape_test_submit.sh,Bash Script,Interface interativa para teste e submissão de malware,sudo ./cape_test_submit.sh,Para gerenciar e submeter amostras de malware,Interativo
+README.md,Documentação,Guia completo de instalação e uso,Leitura,Referência durante toda instalação,N/A
